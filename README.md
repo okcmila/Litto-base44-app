@@ -141,3 +141,14 @@ Essa versãoa da plataforma foi criada pelo Base44 e migrado para o Github Codes
 └── vite.config.js
 
 ---
+
+## Arquitetura do Deploy
+
+O projeto utiliza arquitetura frontend distribuída:
+-Frontend hospedado no Vercel
+-Aplicação desenvolvida em React + Vite
+-Autenticação gerenciada pelo Firebase Authentication
+-Navegaçãao SPA utilizando React Router DOM
+-Estado global de autenticação via Context API
+
+Fluxo: Usuário - Vercel (React App) - Firebase Authentiction
