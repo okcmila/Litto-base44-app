@@ -1,143 +1,55 @@
-# Litto – Clube do Livro 📚
+# React + Vite
 
-> App web de clube do livro com mapa de bibliotecas públicas de São Paulo.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-Essa versãoa da plataforma foi criada pelo Base44 e migrado para o Github Codespace para adaptar autenticação e banco de dados para o Firebase.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-[Relatório com Prompts e a Construção do Site](https://docs.google.com/document/d/1L_ScAtN6gdhlVj38P4pokKj_GtWZCMc-potcQe5qJlQ/edit?usp=sharing)
+## React Compiler
 
----
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Tecnologias Usadas 
+## Expanding the ESLint configuration
 
-- React
-- Vite
-- React Router DOM
-- Firebase Authentication
-- Framer Motion
-- Tailwind CSS (design system customizado)
-- Material Icons
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Welcome to your Base44 project** 
 
----
+**About**
 
-##Estrutura do projeto
-```.
-├── .gitignore
-├── README.md
-├── components.json
-├── eslint.config.js
-├── index.html
-├── jsconfig.json
-├── package-lock.json
-├── package.json
-├── postcss.config.js
-├── public
-│   ├── favicon.svg
-│   └── icons.svg
-├── src
-│   ├── App.css
-│   ├── App.jsx
-│   ├── api
-│   ├── assets
-│   │   ├── hero.png
-│   │   ├── react.svg
-│   │   └── vite.svg
-│   ├── components
-│   │   ├── ProtectedRoute.jsx
-│   │   ├── auth
-│   │   │   └── AuthInput.jsx
-│   │   ├── home
-│   │   │   ├── BooksSection.jsx
-│   │   │   ├── CategoriesSection.jsx
-│   │   │   ├── CommunitySection.jsx
-│   │   │   ├── FeaturedBookSection.jsx
-│   │   │   ├── FeedbackSection.jsx
-│   │   │   ├── HeroSection.jsx
-│   │   │   ├── MoviesSection.jsx
-│   │   │   └── WhyLittoSection.jsx
-│   │   ├── layout
-│   │   │   ├── AppLayout.jsx
-│   │   │   ├── Footer.jsx
-│   │   │   ├── MobileNav.jsx
-│   │   │   └── Navbar.jsx
-│   │   └── ui
-│   │       ├── BrutalButton.jsx
-│   │       ├── BrutalCard.jsx
-│   │       ├── MaterialIcon.jsx
-│   │       ├── accordion.jsx
-│   │       ├── alert-dialog.jsx
-│   │       ├── alert.jsx
-│   │       ├── aspect-ratio.jsx
-│   │       ├── avatar.jsx
-│   │       ├── badge.jsx
-│   │       ├── breadcrumb.jsx
-│   │       ├── button.jsx
-│   │       ├── calendar.jsx
-│   │       ├── card.jsx
-│   │       ├── carousel.jsx
-│   │       ├── chart.jsx
-│   │       ├── checkbox.jsx
-│   │       ├── collapsible.jsx
-│   │       ├── command.jsx
-│   │       ├── context-menu.jsx
-│   │       ├── dialog.jsx
-│   │       ├── drawer.jsx
-│   │       ├── dropdown-menu.jsx
-│   │       ├── form.jsx
-│   │       ├── hover-card.jsx
-│   │       ├── input-otp.jsx
-│   │       ├── input.jsx
-│   │       ├── label.jsx
-│   │       ├── menubar.jsx
-│   │       ├── navigation-menu.jsx
-│   │       ├── pagination.jsx
-│   │       ├── popover.jsx
-│   │       ├── progress.jsx
-│   │       ├── radio-group.jsx
-│   │       ├── resizable.jsx
-│   │       ├── scroll-area.jsx
-│   │       ├── select.jsx
-│   │       ├── separator.jsx
-│   │       ├── sheet.jsx
-│   │       ├── sidebar.jsx
-│   │       ├── skeleton.jsx
-│   │       ├── slider.jsx
-│   │       ├── sonner.jsx
-│   │       ├── switch.jsx
-│   │       ├── table.jsx
-│   │       ├── tabs.jsx
-│   │       ├── textarea.jsx
-│   │       ├── toast.jsx
-│   │       ├── toaster.jsx
-│   │       ├── toggle-group.jsx
-│   │       ├── toggle.jsx
-│   │       ├── tooltip.jsx
-│   │       └── use-toast.jsx
-│   ├── hooks
-│   │   └── use-mobile.jsx
-│   ├── index.css
-│   ├── lib
-│   │   ├── AuthContext.jsx
-│   │   ├── PageNotFound.jsx
-│   │   ├── firebase.js
-│   │   ├── query-client.js
-│   │   └── utils.js
-│   ├── main.jsx
-│   ├── pages
-│   │   ├── Bibliotecas.jsx
-│   │   ├── Cadastro.jsx
-│   │   ├── Comunidade.jsx
-│   │   ├── Entrar.jsx
-│   │   ├── Explorar.jsx
-│   │   ├── Home.jsx
-│   │   ├── Perfil.jsx
-│   │   └── RecuperarSenha.jsx
-│   └── utils
-│       └── index.ts
-├── tailwind.config.js
-├── vercel.json
-└── vite.config.js
+View and Edit  your app on [Base44.com](http://Base44.com) 
 
----
+This project contains everything you need to run your app locally.
+
+**Edit the code in your local development environment**
+
+Any change pushed to the repo will also be reflected in the Base44 Builder.
+
+**Prerequisites:** 
+
+1. Clone the repository using the project's Git URL 
+2. Navigate to the project directory
+3. Install dependencies: `npm install`
+4. Create an `.env.local` file and set the right environment variables
+
+```
+VITE_BASE44_APP_ID=your_app_id
+VITE_BASE44_APP_BASE_URL=your_backend_url
+
+e.g.
+VITE_BASE44_APP_ID=cbef744a8545c389ef439ea6
+VITE_BASE44_APP_BASE_URL=https://my-to-do-list-81bfaad7.base44.app
+```
+
+Run the app: `npm run dev`
+
+**Publish your changes**
+
+Open [Base44.com](http://Base44.com) and click on Publish.
+
+**Docs & Support**
+
+Documentation: [https://docs.base44.com/Integrations/Using-GitHub](https://docs.base44.com/Integrations/Using-GitHub)
+
+Support: [https://app.base44.com/support](https://app.base44.com/support)
